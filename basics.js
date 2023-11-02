@@ -50,3 +50,12 @@ Boolean(1);
 
 +'1'; // Equivalent to Number()
 +true;
+
+// null to Number - 0
+// undefined to Number - null
+
+null > 0;  // (1) false
+null == 0; // (2) false
+null >= 0; // (3) true
+console.log("Here");
+console.log("2" > "12");
