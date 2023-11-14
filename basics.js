@@ -59,3 +59,47 @@ null == 0; // (2) false
 null >= 0; // (3) true
 console.log("Here");
 console.log("2" > "12");
+
+var browser = 'Firefox';
+
+switch (browser) {
+  case 'Edge':
+    alert( "You've got the Edge!" );
+    break;
+
+  case 'Chrome':
+  case 'Firefox':
+  case 'Safari':
+  case 'Opera':
+    alert( 'Okay we support these browsers too' );
+    break;
+
+  default:
+    alert( 'We hope that this page looks ok!' );
+}
+
+if (browser === 'Edge') {
+    alert( "You've got the Edge!" );
+}
+else if (['Chrome', 'Firefox', 'Safari', 'Opera'].includes(browser)) {
+    alert( 'Okay we support these browsers too' );
+}
+else {
+    alert( 'We hope that this page looks ok!' );
+}
+
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+ask(
+  "Вы согласны?",
+  () => alert("Вы согласились."),
+  () => alert("Вы отменили выполнение."),
+);
+
+
+// Result
+// https://learn.javascript.ru/javascript-specials
